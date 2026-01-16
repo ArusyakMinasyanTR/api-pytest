@@ -6,6 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def test_valid_login():
     # Set up the Chrome driver with Service
+    
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
     driver.get("https://www.saucedemo.com/")
